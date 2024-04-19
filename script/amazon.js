@@ -8,7 +8,7 @@ let products=[{
          priceIncent:1090
 },
     { image: '<img class="product-image" src="images/products/intermediate-composite-basketball.jpg">',
-    name: `Intermediate Size Bascketball`,
+    name: 'Intermediate Size Bascketball',
     rating:{
         stars:4.0,
         count:127
@@ -29,7 +29,7 @@ products.forEach((product) => {
     <div class="product-container">
     <div class="product-image-container">
     <img class="product-image"
-      src="${product.image}">
+      ${product.image}
     </div>
 
     <div class="product-name limit-text-to-2-lines">
@@ -46,7 +46,7 @@ products.forEach((product) => {
     </div>
 
     <div class="product-price">
-$${product.priceIncent / 100}
+$${(product.priceIncent / 100).toFixed(2)}
     </div>
 
     <div class="product-quantity-container">
@@ -79,4 +79,4 @@ $${product.priceIncent / 100}
         });
 
   console.log(productHTML);
-  document.querySelector('.js-products-grid').innerHTML = productHTML;
+  document.querySelector('.js-product-grid').innerHTML = productHTML;
