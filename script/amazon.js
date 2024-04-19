@@ -22,7 +22,24 @@ let products=[{
             count:56
         }, 
         priceIncent:799
-    }];
+    },{
+      image:'<img class="product-image" src="images/products/acadamy book.jpg">',
+      name:'When Worlds Collide',
+rating:{
+  stars:4.5,
+  count:2000
+},
+priceIncent:851
+    },{
+      image:'<img class="product-image" src="images/products/closes-amazon.jpg">',
+      name:"'OYOANGLE Women's 3 Piece Pajama Set Sleepwear Loungewear Sets PJ Set Print Tee Top and Shorts with Pants'",
+rating:{
+  stars:4.5,
+  count:99
+},
+priceIncent:33.99
+    }
+  ];
 let productHTML = '';
 products.forEach((product) => {
     productHTML += `
