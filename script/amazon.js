@@ -1,4 +1,4 @@
-
+import {cart} from "../data/cart.js";
 let productsHTML = '';
 products.forEach((product) => {
     productsHTML += `
@@ -54,8 +54,6 @@ $${(product.priceCents / 100).toFixed(2)}
   </div>
         `;
         });
-
-  console.log(productsHTML);
   document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
   document.querySelectorAll('.js-add-to-cart')
