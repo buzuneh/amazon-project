@@ -125,6 +125,7 @@ console.log(deliveryData.format('dddd, MMMM D'));
         updateDeliveryOption(productId, deliveryOptionId);
 
         renderOrderSummary();
+        renderPaymentSummary();
         });
        });
 }
