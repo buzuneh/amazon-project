@@ -16,6 +16,7 @@ products.forEach((product) => {
 
     <div class="product-rating-container">
       <img class="product-rating-stars"
+    
         src="images/ratings/rating-${product.rating.stars * 10}.png">
         <div class="product-rating-count link-primary">
       ${product.rating.count}
@@ -56,13 +57,14 @@ $${formatCurrency(product.priceCents)}
   </div>
         `;
         });
-  document.querySelector('.js-products-grid').innerHTML = productsHTML;
+  document.querySelector('.js-products-grid')
+  .innerHTML = productsHTML;
 
 
 function updateCartQuantity(){
   let cartQuantity = 0;
-  cart.forEach((item) => {
-    cartQuantity += item.quantity;
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
   });
   document.querySelector('.js-cart-quantity')
   .innerHTML=cartQuantity;
